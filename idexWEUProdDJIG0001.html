@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script>
+(function(apiKey){
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+    v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+        // Call this whenever information about your visitors becomes available
+        // Please use Strings, Numbers, or Bools for value types.
+        pendo.initialize({
+            "visitor": {
+							"id": "VIDProdDJIG0001",	
+							"email": "one-product+ProdDJIG0001@pendo.io",
+							"full_name": "WEUProdDJIG0001"
+						},
+						"account": {
+							"id": "AccIDProdDJIG0001",
+							"name": "AccWEUProdDJIG0001",
+							"monthly_value": 1345,
+							"is_paying": true
+						},
+        });
+})('c5d8367e-f7a6-4a3d-6d80-eb6cb7b01fc2');
+</script>
+    </head>
+    <body>
+        Testing Page
+    </body>
+</html>
